@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>4x2 CSS Grid</title>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+      grid-template-rows: repeat(2, 100px);  /* 2 rows, each 100px tall */
+      gap: 10px; /* spacing between items */
+      padding: 20px;
+    }
+
+    .grid-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      font-family: sans-serif;
+      border-radius: 6px;
+    }
+
+    .item1 { background: #e74c3c; }
+    .item2 { background: #2ecc71; }
+    .item3 { background: #3498db; }
+    .item4 { background: #f39c12; }
+    .item5 { background: #9b59b6; }
+    .item6 { background: #1abc9c; }
+    .item7 { background: #e67e22; }
+    .item8 { background: #34495e; }
+  </style>
+</head>
+<body>
+
+  <div class="grid-container">
+    <div class="grid-item item1">Item 1</div>
+    <div class="grid-item item2">Item 2</div>
+    <div class="grid-item item3">Item 3</div>
+    <div class="grid-item item4">Item 4</div>
+    <div class="grid-item item5">Item 5</div>
+    <div class="grid-item item6">Item 6</div>
+    <div class="grid-item item7">Item 7</div>
+    <div class="grid-item item8">Item 8</div>
+  </div>
+
+</body>
+</html>
